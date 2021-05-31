@@ -8,6 +8,29 @@ module.exports = {
   presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    extend: {
+      colors: {
+        dtred: {
+          600: '#E62E4D',
+        },
+        dtblue: {
+          600: '#6933FF',
+          700: '#5429CC',
+        },
+        dtgreen: {
+          400: '#33CC95',
+        },
+        dttitulos: {
+          700: '#363F5F',
+        },
+        dttextos: {
+          400: '#969CB3',
+        },
+        dtbackground: {
+          100: '#F0F2F5',
+        },
+      },
+    },
     screens: {
       sm: '640px',
       md: '768px',
@@ -279,6 +302,8 @@ module.exports = {
         '"Courier New"',
         'monospace',
       ],
+      body: ['Poppins'],
+      header: ['Poppins'],
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],
